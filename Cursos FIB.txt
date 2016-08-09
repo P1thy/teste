@@ -1,0 +1,21 @@
+Administração;
+Agronomia;
+Biomedicina;
+Ciência Computação;
+Ciência Contábeis;
+Design;
+Design Interiores;
+Design Moda;
+Direito;
+Educação Física - Bacharelado;
+Educação Física - Licenciatura;
+Enfermagem;
+Engenharia Civil;
+Engenharia de Produção;
+Fármacia;
+Fisioterapia;
+Gestão RH;
+Nutrição;
+Produção Audiovisual;
+Publicidade & Propaganda;
+Psicologia.

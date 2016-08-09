@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    <!--Nesse ponto faz-se todos os links com as pastas que contem os estilos utilizados pelo bootstrap, com pasta de javascript que é utilizado para a função de slideshow. -->
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/css.css">
+    <script src="js/jquery-2.2.3.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="bootstrap/css/custom.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+		<title>Carômetro - FIB</title> <!--Titulo da página -->
+</head>
+<body>
+<div class="container">
+	<header class="row">
+    	<div id="cabe">
+			<nav class="navbar navbar-default">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+	          			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" ><font color="#fff" size="5"> HOME </font><span class="caret"></span></a>
+	          			<ul class="dropdown-menu">
+	            			<li><a href="#"><font color="#FF8C00" size="4">DISCIPLINAS</font></a></li>
+	          			</ul>
+	        		</li>
+	        		<li><a href="#"><font color="#fff" size="5"> MUNDOFIB </font></a></li>
+	        		<li><a href="#"><font color="#fff" size="5"> OPORTUNIDADES </font></a></li>
+	        		<li><a href="#"><font color="#fff" size="5"> CURSOS </font></a></li>
+	        		<li><a href="#"><font color="#fff" size="5"> PROFESSORES </font></a></li>
+	        	</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="container">
+			<div class="row">
+				<div id="conteudo" class="col-md-9">
+					<button id="botao" type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target=".bs-example-modal-lg">PUBLICAR</button><br>
+					<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+     					<div class="modal-dialog modal-lg">
+       						 <div class="modal-content">
+       						 	<div class="modal-publicar">
+       						 		<h3 class="form-login-heading">Publique</h3>
+	       						 	<textarea rows="10" cols="40"  class="input-large" id="modalpublicar" maxlength="500" placeholder="COMENTÁRIO" required autofocus></textarea><br><br>
+	       						 	<input type="file" class="input-large" maxlength="100" id="arquivomateria"><br>
+	          						<p>
+	          							<button type="button" class="btn btn-primary btn-sm" id="publicar">PUBLICAR</button>
+	          						</p><br>
+          						</div>
+       						 </div>
+       					</div>
+       					<div class="col-md-6">
+       						<!--Aqui vai o conteudo postado -->
+       					</div>
+       				</div>						
+											
+				</div>
+				<div id="sidebar" class="col-md-3">
+					<font color="#FF8C00" size="6">Feed Notícias</font><br>
+					<font color="#FF8C00" size="6">Chat FIB</font>
+				</div>		
+			</div>
+	</div>
+</div>
+</body>
+</html>

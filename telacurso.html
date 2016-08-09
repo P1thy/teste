@@ -1,0 +1,111 @@
+<?php /*
+require_once("lib/funcoes.php");
+$conexao  = conexao();
+
+if (isset($_REQUEST["pesquisa"]))
+{
+	$pesquisa = $_REQUEST["pesquisa"];
+}
+else
+{
+	$pesquisa = "";
+}
+
+if ($pesquisa=="")
+{
+	$sql = "";
+}
+else
+{
+	$sql = "select *
+			from curso where   
+			cur_nome like '$pesquisa%'";
+			
+}			  
+$resultado = mysql_query( $sql , $conexao ) or die("Erro SQL" . $sql );*/
+?>
+	<head>
+		<meta charset="UTF-8">
+    <!--Nesse ponto faz-se todos os links com as pastas que contem os estilos utilizados pelo bootstrap, com pasta de javascript que é utilizado para a função de slideshow. -->
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/css.css">
+    <script src="js/jquery-2.2.3.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="bootstrap/css/custom.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+		<title>Carômetro - FIB</title> <!--Titulo da página -->
+</head>
+<style>
+	#colunm1 { width: 150px; float: left; height: 300px; }
+	#colunm2 { width: 400px; float: right; height: 300px; }
+	#colunm3 { width: 150px; float: left; height: 300px; }
+	</style>
+<body>
+<div class="container">
+	<header class="row">
+    	<div id="cabe">
+			<nav class="navbar navbar-default">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+	          			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" ><font color="#fff" size="5"> HOME </font><span class="caret"></span></a>
+	          			<ul class="dropdown-menu">
+	            			<li><a href="#"><font color="#FF8C00" size="4">DISCIPLINAS</font></a></li>
+	          			</ul>
+	        		</li>
+	        		<li><a href="#"><font color="#fff" size="5"> MUNDOFIB </font></a></li>
+	        		<li><a href="#"><font color="#fff" size="5"> OPORTUNIDADES </font></a></li>
+	        		<li><a href="#"><font color="#fff" size="5"> CURSOS </font></a></li>
+	        		<li><a href="#"><font color="#fff" size="5"> PROFESSORES </font></a></li>
+	        	</ul>
+			</nav>
+		</div>
+	</header>
+	<form method="post" action="telacurso.php" name="frm">
+			<div class="row">
+				<div id="conteudo" class="col-md-9">
+					<h3> Digite um curso</h3>
+					<div class="col-lg-6">
+						<div class="input-group">
+								<input type="text" id="pesquisa" name="pesquisa" class="form-control" maxlength="100" placeholder="Nome" required autofocus>				
+	     					<span class="input-group-btn">
+	<!--        				<button class="btn btn-primary" type="submit" onclick="javascript: document.frm.submit();">Pesquisar</button> -->
+	     				 	</span>
+	     				</div>
+	     			</div>
+   					<div>
+   						<br />
+   						<br />
+   						<br />
+   						<?php
+/*	while ($linha=mysql_fetch_array($resultado))
+	{
+		$id   = $linha["cur_id"];
+		$nome = $linha["cur_nome"];		
+		?>
+   							<div id="colunm1"><?php
+				echo $linha["cur_id"];
+				?> </div>   						
+
+    <div id="colunm2"> <?php
+				echo $linha["cur_nome"];
+				?>   	</div>
+
+    <div id="colunm3"> tetao</div>
+    <!--Mostra as turmas do curso pesquisado. Ao clicar na turma de interesse deverá abrir todos os alunos daquela turma. Com foto, Nome, Apelido, email -->
+<?php
+}*/
+?>
+       				</div>
+
+				
+       			<div id="sidebar" class="col-md-3">
+					<font color="#FF8C00" size="6">Feed Notícias</font><br>
+					<font color="#FF8C00" size="6">Chat FIB</font>
+				</div>		
+			</div>
+
+	</div>
+</div>
+</form>
+</body>

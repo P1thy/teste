@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    <!--Nesse ponto faz-se todos os links com as pastas que contem os estilos utilizados pelo bootstrap, com pasta de javascript que é utilizado para a função de slideshow. -->
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/css.css">
+    <script src="js/jquery-2.2.3.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="bootstrap/css/custom.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+		<title>Carômetro - FIB - Cadastro Curso</title> <!--Titulo da página -->
+</head>
+
+<body>
+	<div class="container">
+		<header class="row">
+		    <div id="cabe"> <!--Cabeçalho -->
+		     	<div id="logo"> 
+		      		<a href="home.html"><img src="logo/logocarometro.png" alt="LogoCarometro" class="img-rounded"></a>
+		  	  	</div>
+		  	
+
+  	  	</header>
+	<div class="row">
+      <div role="main">
+      	<form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+		    <fieldset>
+		    	<legend> Cadastro Curso </legend>
+		    	<div class="control-group">
+		    		<label class="control-label" for="codigocurso">CÓDIGO</label>
+		    		<div class="controls">
+						<input type="text" class="input-large" id="codigocurso" maxlength="10" placeholder="CÓDIGO" required autofocus>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="nomecurso">NOME</label>
+					<div class="controls">
+						<input type="text" class="input-large" id="nomecurso" maxlength="200" placeholder="NOME">
+					</div>
+				</div>
+				<button type="button" class="btn btn-mini" data-toggle="modal" data-target=".bd-example-modal-sm">PESQUISAR</button><br>
+					<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+     					<div class="modal-dialog modal-sm">
+       						 <div class="modal-content">
+       						 	<h3 class="form-login-heading">Digite o nome</h3>
+          						<input type="text" id="modalpesquisa" class="form-control" placeholder="Nome" required autofocus>
+          						<p>
+          							<button type="button" class="btn btn-primary btn-sm">Pesquisar</button>
+          						</p>
+       						 </div>
+       					</div>
+       				</div>
+				<div class="control-group">
+					
+					<label class="control-label" for="coordenadorcurso">COORDENADOR</label>
+					<div class="controls">
+						<input type="text" class="input-large" id="coordenadorcurso" maxlength="100" placeholder="COORDENADOR">
+					</div>					
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="corpodocentecurso">CORPO DOCENTE</label>
+					<div class="controls">
+						<input type="text" class="input-large" id="corpodocentecurso" placeholder="CORPO DOCENTE">
+					</div>
+					<button type="button" class="btn btn-mini" data-toggle="modal" data-target=".bd-example-modal-sm">PESQUISAR</button>
+					<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+     					<div class="modal-dialog modal-sm">
+       						 <div class="modal-content">
+       						 	<h3 class="form-login-heading">Digite o nome</h3>
+          						<input type="text" id="modalpesquisa" class="form-control" placeholder="Nome" required autofocus>
+          						<p>
+          							<button type="button" class="btn btn-primary btn-sm">Pesquisar</button>
+          						</p>
+       						 </div>
+       					</div>
+       				</div>
+       				<button type="button" class="btn btn-mini" data-toggle="modal" data-target=".bd-example-modal-sm">ADICIONAR</button><br><!--Nesse ponto cada vez que a pessoa clicar em adicionar, deverá adicionar um novo campo e assim por diante, fazendo a pesquisa do nome do professor -->
+				</div>
+			</fieldset><br><br>
+
+			<div id="button">        
+		      <button class="btn btn-primary" type="submit">Salvar</button>
+		      <button class="btn btn-secondary" type="submit">Cancelar</button>
+		    </div>
+		    <br><br>
+		</form>
+	  </div>
+	  
+    </div>
+</body>
+</html>
